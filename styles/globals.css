@@ -155,3 +155,14 @@
         }
     }
 }
+
+/* ===== soulignure animée pour tes liens ===== */
+.nav-link .underline {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-link:hover .underline {
+    transform: scaleX(1);
+  }
