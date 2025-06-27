@@ -12,7 +12,9 @@ export default function Home() {
       <main className="max-w-3xl mx-auto px-4 py-8 mt-8">
         <Dialogue />
       </main>
-      <CardsGrid />
+      <main className="max-w-5xl mx-auto px-4 py-8 mt-8">
+        <CardsGrid />
+      </main>
       <References />
       <Projects />
       <Footer />

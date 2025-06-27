@@ -8,7 +8,8 @@ const questions = [
   "Qui es-tu ?",
   "Qu'est-ce que tu fais dans la vie ?",
   "Quelles sont tes compétences clés ?",
-  "Qu'attends-tu de cette alternance ?"
+  "Qu'attends-tu de cette alternance ?",
+  "Pourquoi toi plutôt qu’un autre ?"
 ]
 
 // 2) Les réponses du bot, même index que questions
@@ -27,7 +28,11 @@ const reponses = [
   },
   {
     name: "Loc, Développeur web fullstack",
-    text: "Je cherche une alternance pour continuer d'apprendre en entreprise et travailler sur des projets concrets à impact !"
+    text: "Une envie de contribuer activement, je ne recherche pas seulement une formation sur le terrain, mais aussi un cadre où je pourrai apporter de la valeur à l’équipe, m’impliquer dans les projets, et progresser en apprenant des professionnels expérimentés."
+  },
+  {
+    name: "Loc, Développeur web fullstack",
+    text: "Je peux apporter à AYAQ un véritable appui sur le développement front-end et des bases solides côté back-end. Ma sensibilité aux enjeux RSE et à la qualité du code s’aligne naturellement avec vos valeurs. Enfin, je m’adapte vite, je travaille bien en équipe et je suis motivé à m’investir concrètement dans vos projets."
   },
 ]
 
