@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="relative z-10 p-8 rounded-lg text-white max-w-xl text-center">
         <h1 className="text-4xl font-bold mb-4">Candidature – Assistant Développement Web</h1>
         <p className="text-lg">
-          Passionné par l'outdoor et le web, je veux mettre mon énergie et mes compétences au service d'AYAQ.
+          Passionné par l&apos;outdoor et le web, je veux mettre mon énergie et mes compétences au service d&apos;AYAQ.
         </p>
       </div>
     </section>

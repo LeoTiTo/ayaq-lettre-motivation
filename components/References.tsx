@@ -11,18 +11,18 @@ const references = [
   },
   {
     name: "Ghita, Business Developer",
-    text: "J’ai été très contente de te rencontrer pendant ton stage chez Addeus, même si nos échanges étaient limités parce que j’étais dans l’équipe Sales. J’ai souvent pensé à ton travail et à celui de l’équipe, notamment sur la partie développement. Je te souhaite de t’épanouir encore plus dans ton métier et de prendre beaucoup de plaisir à créer de nombreux projets passionnants.",
+    text: "J'ai été très contente de te rencontrer pendant ton stage chez Addeus, même si nos échanges étaient limités parce que j'étais dans l'équipe Sales. J'ai souvent pensé à ton travail et à celui de l'équipe, notamment sur la partie développement. Je te souhaite de t'épanouir encore plus dans ton métier et de prendre beaucoup de plaisir à créer de nombreux projets passionnants.",
   },
 ];
 
 export default function References() {
   return (
     <section className="py-16 bg-white">
-      <Title title="Retour d’expérience de mon dernier stage"/>
+      <Title title="Retour d'expérience de mon dernier stage"/>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         {references.map((ref) => (
           <div key={ref.name} className="p-6 border shadow">
-            <p className="italic mb-2">"{ref.text}"</p>
+            <p className="italic mb-2">&quot;{ref.text}&quot;</p>
             <p className="font-semibold text-right">– {ref.name}</p>
           </div>
         ))}

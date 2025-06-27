@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Card } from './card';
+import Card from './card';
 
 const randomQuoteUrl = '/quotes/random';
 
