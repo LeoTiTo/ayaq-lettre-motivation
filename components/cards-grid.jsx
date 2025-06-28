@@ -9,20 +9,20 @@ const Skills = () => {
     >
     <Title title="Mes compétences" symbol="" />
     <p className="mt-4 text-sm text-neutral-700 italic text-center">
-      N&apos;hésitez pas à cliquer sur les cartes pour explorer mes compétences, les technologies que j'utilise, et en savoir plus sur mon parcours technique.
+      N&apos;hésitez pas à cliquer sur les cartes pour explorer mes compétences, les technologies que j&apos;utilise, et en savoir plus sur mon parcours technique.
     </p>
     <div
       className="
       flex gap-4 p-4 overflow-x-auto overflow-y-hidden   /* Mobile : scroll horizontal */
       sm:grid sm:grid-cols-2                 /* Dès sm : grille 2 cols */
       md:grid-cols-3 lg:grid-cols-5     /* +1 col sur md/lg */
-      sm:gap-6 sm:overflow-x-hidden          /* Dès sm : plus d’espace, plus de scroll */
+      sm:gap-6 sm:overflow-x-hidden          /* Dès sm : plus d'espace, plus de scroll */
     "
     >
         <Card
             title="Next.js"
             image="https://svgl.app/library/nextjs_icon_dark.svg"
-            description="Utilisé sur quelques projets, Next s'intègre parfaitement avec React et permet un déploiement rapide avec Netlify, comme ici"
+            description="Utilisé sur quelques projets, Next s&apos;intègre parfaitement avec React et permet un déploiement rapide avec Netlify, comme ici"
             typeOfLangage="Framework"
           />
         <Card
@@ -34,25 +34,25 @@ const Skills = () => {
         <Card
           title="Javascript"
           image="https://svgl.app/library/javascript.svg"
-          description="J'utilise JS depuis 2 ans environ."
+          description="J&apos;utilise JS depuis 2 ans environ."
           typeOfLangage="Front/ Back"
         />
         <Card
           title="Vue"
           image="https://svgl.app/library/vue.svg"
-          description="J'ai appris à l'utiliser lors de mon stage chez Addeus."
+          description="J&apos;ai appris à l&apos;utiliser lors de mon stage chez Addeus."
           typeOfLangage="Framework"
         />
         <Card
           title="TypeScript"
           image="https://svgl.app/library/typescript.svg"
-          description="TypeScript ajoute le typage statique à JavaScript, renforçant la qualité et la maintenabilité du code. Je l'ai appris lors de mon stage chez Addeus."
+          description="TypeScript ajoute le typage statique à JavaScript, renforçant la qualité et la maintenabilité du code. Je l&apos;ai appris lors de mon stage chez Addeus."
           typeOfLangage="Front/ Back"
         />
         <Card
           title="SCSS"
           image="https://svgl.app/library/sass.svg"
-          description="Je m'habitue à utiliser des fichiers SCSS au lieu de CSS pendant mon stage chez Addeus."
+          description="Je m&apos;habitue à utiliser des fichiers SCSS au lieu de CSS pendant mon stage chez Addeus."
           typeOfLangage="Front"
         />
         <Card
@@ -64,43 +64,49 @@ const Skills = () => {
         <Card
           title="React"
           image="https://svgl.app/library/react_dark.svg"
-          description="J'utilise React quasiment systématiquement pour développer mes projets front."
+          description="J&apos;utilise React quasiment systématiquement pour développer mes projets front."
           typeOfLangage="Front"
         />
         <Card
           title="Node.js"
           image="https://svgl.app/library/nodejs.svg"
-          description="J'utilise principalement Node.js pour développer mes projets côté back."
+          description="J&apos;utilise principalement Node.js pour développer mes projets côté back."
           typeOfLangage="Back"
         />
         <Card
           title="Express"
           image="https://svgl.app/library/expressjs.svg"
-          description="C'est un framework minimaliste pour Node.js que j'utilise lorsque je développe un projet côté back."
+          description="C&apos;est un framework minimaliste pour Node.js que j&apos;utilise lorsque je développe un projet côté back."
           typeOfLangage="Back"
+        />
+        <Card
+          title="Shopify"
+          image="https://svgl.app/library/shopify.svg"
+          description="J&apos;ai eu l&apos;occasion d&apos;utiliser Shopify lors de mon stage chez NekoTea, principalement pour la conception et l&apos;adaptation de l&apos;interface utilisateur afin d&apos;améliorer l&apos;expérience client."
+          typeOfLangage="Front"
         />
         <Card
           title="PHP"
           image="https://svgl.app/library/php.svg"
-          description="Utilisé pour contruire mon projet de l'application de QCM sur GitHub, PHP est très pratique pour le script côté serveur pour créer des pages web dynamiques."
+          description="Utilisé pour contruire mon projet de l&apos;application de QCM sur GitHub, PHP est très pratique pour le script côté serveur pour créer des pages web dynamiques."
           typeOfLangage="Back"
         />
         <Card
           title="PostgresQL"
           image="https://svgl.app/library/postgresql.svg"
-          description="Postgres est le SGBDR que j'ai utilisé pour l'ensemble de mes projets jusqu'à maintenant."
+          description="Postgres est le SGBDR que j&apos;ai utilisé pour l&apos;ensemble de mes projets jusqu&apos;à maintenant."
           typeOfLangage="Back"
         />
         <Card
           title="Github"
           image="https://svgl.app/library/github_light.svg"
-          description="Github est le seul gestionnaire de git que j'utilise."
+          description="Github est le seul gestionnaire de git que j&apos;utilise."
           typeOfLangage="Git Managment"
         />
         <Card
           title="Python (débutant)"
           image="https://svgl.app/library/python.svg"
-          description="Très attiré par l'IA, je commence à apprendre cette technologie."
+          description="Très attiré par l&apos;IA, je commence à apprendre cette technologie."
           typeOfLangage="Back"
         />
         <Card
@@ -112,7 +118,7 @@ const Skills = () => {
         <Card
           title="Firebase"
           image="https://svgl.app/library/firebase.svg"
-          description="Firebase est une plateforme Google offrant authentification, base de données temps réel et hébergement. Je l’ai utilisée pour gérer les utilisateurs et stocker des données sur mes projets."
+          description="Firebase est une plateforme Google offrant authentification, base de données temps réel et hébergement. Je l&apos;ai utilisée pour gérer les utilisateurs et stocker des données sur mes projets."
           typeOfLangage="Back"
         />
       </div>
