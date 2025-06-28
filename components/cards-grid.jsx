@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="scroll-mt-10 min-h-screen py-20"
+      className="scroll-mt-10 min-h-screen pt-20"
     >
     <Title title="Mes compétences" symbol="" />
     <p className="mt-4 text-sm text-neutral-700 italic text-center">

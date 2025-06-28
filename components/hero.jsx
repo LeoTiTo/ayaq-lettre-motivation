@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="h-screen flex items-center justify-center bg-cover bg-center relative scroll-mt-16 min-h-screen py-20"
+      className="h-screen flex items-center justify-center bg-cover bg-center relative scroll-mt-16 min-h-screen pt-20"
       style={{ backgroundImage: "url('/images/hero-ayaq.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm hover:backdrop-blur-none transition-all duration-300" />

@@ -9,7 +9,8 @@ const questions = [
   "Qu'est-ce que tu fais dans la vie ?",
   "Quelles sont tes compétences clés ?",
   "Qu'attends-tu de cette alternance ?",
-  "Pourquoi toi plutôt qu’un autre ?"
+  "Pourquoi toi plutôt qu’un autre ?",
+  "Pourquoi as-tu fait ce site ?"
 ]
 
 // 2) Les réponses du bot, même index que questions
@@ -33,6 +34,10 @@ const reponses = [
   {
     name: "Loc, Développeur web fullstack",
     text: "Je peux apporter à AYAQ un véritable appui sur le développement front-end et des bases solides côté back-end. Ma sensibilité aux enjeux RSE et à la qualité du code s’aligne naturellement avec vos valeurs. Enfin, je m’adapte vite, je travaille bien en équipe et je suis motivé à m’investir concrètement dans vos projets."
+  },
+  {
+    name: "Loc, Développeur web fullstack",
+    text: "J'ai réalisé ce site pour renforcer ma candidature à cette alternance, en espérant qu'il retiendra votre attention. C'était aussi un projet plaisir, en découvrant quelques bugs dans la navigation du site AYAQ, j’ai eu envie de le revisiter à ma manière. C’est donc l’occasion parfaite de vous montrer mes compétences web"
   },
 ]
 
@@ -61,7 +66,7 @@ export default function Chatbot() {
   }
 
   return (
-    <section id="dialogue" className="scroll-mt-10 min-h-screen py-20">
+    <section id="dialogue" className="scroll-mt-10 min-h-screen pt-20">
       <div className="flex flex-col h-full border overflow-hidden rounded-sm">
       <h2 className="py-8 text-xl lg:text-2xl font-bold text-center uppercase">
         Dialoguez avec moi ?

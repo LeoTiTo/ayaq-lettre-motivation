@@ -11,10 +11,10 @@ export default function Home() {
     <>
       <ScrollSpy />
       <Hero />
-      <main className="max-w-3xl mx-auto px-4 py-8 mt-8">
+      <main className="max-w-3xl mx-auto px-4">
         <Dialogue />
       </main>
-      <main className="max-w-6xl mx-auto px-4 py-8 mt-8">
+      <main className="max-w-6xl mx-auto px-4">
         <CardsGrid />
       </main>
       <References />
