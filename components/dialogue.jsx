@@ -61,7 +61,7 @@ export default function Chatbot() {
   }
 
   return (
-    <section id="dialogue">
+    <section id="dialogue" className="scroll-mt-10 min-h-screen py-20">
       <div className="flex flex-col h-full border overflow-hidden rounded-sm">
       <h2 className="py-8 text-xl lg:text-2xl font-bold text-center uppercase">
         Dialoguez avec moi ?

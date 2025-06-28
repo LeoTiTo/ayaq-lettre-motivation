@@ -5,14 +5,17 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="p-8"
+      className="scroll-mt-10 min-h-screen py-20"
     >
     <Title title="Mes compétences" symbol="" />
+    <p className="mt-4 text-sm text-neutral-700 italic text-center">
+      N&apos;hésitez pas à cliquer sur les cartes pour explorer mes compétences, les technologies que j'utilise, et en savoir plus sur mon parcours technique.
+    </p>
     <div
       className="
-      flex gap-4 mt-8 pb-4 overflow-x-auto    /* Mobile : scroll horizontal */
+      flex gap-4 p-4 overflow-x-auto overflow-y-hidden   /* Mobile : scroll horizontal */
       sm:grid sm:grid-cols-2                 /* Dès sm : grille 2 cols */
-      md:grid-cols-3 lg:grid-cols-4         /* +1 col sur md/lg */
+      md:grid-cols-3 lg:grid-cols-5     /* +1 col sur md/lg */
       sm:gap-6 sm:overflow-x-hidden          /* Dès sm : plus d’espace, plus de scroll */
     "
     >

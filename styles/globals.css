@@ -166,3 +166,27 @@
   .nav-link:hover .underline {
     transform: scaleX(1);
   }
+
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s cubic-bezier(.4,0,.2,1);
+}
+section.show-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+nav a.active {
+  color: #000 !important;
+}
+
+nav a.active .underline {
+  transform: scaleX(1);
+  background: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  

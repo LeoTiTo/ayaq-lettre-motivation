@@ -4,10 +4,11 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section
-      className="h-screen flex items-center justify-center bg-cover bg-center relative"
+      id="hero"
+      className="h-screen flex items-center justify-center bg-cover bg-center relative scroll-mt-16 min-h-screen py-20"
       style={{ backgroundImage: "url('/images/hero-ayaq.jpg')" }}
     >
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-sm hover:backdrop-blur-none" />
+      <div className="absolute inset-0 bg-black/30 backdrop-blur-sm hover:backdrop-blur-none transition-all duration-300" />
       
       <div className="relative z-10 p-8 rounded-lg text-white max-w-xl text-center">
         <h1 className="text-4xl font-bold mb-4 uppercase">
