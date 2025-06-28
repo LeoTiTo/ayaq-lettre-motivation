@@ -11,15 +11,17 @@ export default function Home() {
     <>
       <ScrollSpy />
       <Hero />
-      <main className="max-w-3xl mx-auto px-4">
+      <div className="w-full mx-auto max-w-3xl px-4">
         <Dialogue />
-      </main>
+      </div>
       <main className="max-w-6xl mx-auto px-4">
         <CardsGrid />
       </main>
-      <References />
+      <div className="w-full mx-auto max-w-7xl px-4">
+        <References />
+      </div>
       <Projects />
       <Footer />
     </>
   )
-} 
+}

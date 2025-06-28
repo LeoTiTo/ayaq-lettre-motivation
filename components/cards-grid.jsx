@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="scroll-mt-10 min-h-screen pt-20"
+      className="scroll-mt-10 pt-20"
     >
     <Title title="Mes compétences" symbol="" />
     <p className="mt-4 text-sm text-neutral-700 italic text-center">
@@ -78,6 +78,12 @@ const Skills = () => {
           image="https://svgl.app/library/expressjs.svg"
           description="C&apos;est un framework minimaliste pour Node.js que j&apos;utilise lorsque je développe un projet côté back."
           typeOfLangage="Back"
+        />
+        <Card
+          title="Figma"
+          image="https://svgl.app/library/figma.svg"
+          description="Je suis familier avec Figma, que j&apos;utilise pour concevoir des interfaces dans le cadre de projets universitaires. Je sais également implémenter fidèlement ces designs en code, en respectant les contraintes UI/UX."
+          typeOfLangage="Outil"
         />
         <Card
           title="Shopify"

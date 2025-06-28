@@ -17,8 +17,8 @@ const references = [
 
 export default function References() {
   return (
-    <section id= "ref" className="scroll-mt-10 min-h-screen pt-20">
-      <Title title="Retour d'expérience de mon dernier stage"/>
+    <section id= "ref" className="scroll-mt-10 pt-20">
+      <Title title="Mon dernier stage, vu par mes collègues"/>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         {references.map((ref) => (
           <div key={ref.name} className="p-6 border shadow">
