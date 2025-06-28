@@ -4,7 +4,7 @@ import CardsGrid from '../components/cards-grid'
 import References from '../components/References'
 import Projects from '../components/Projects'
 import Footer from '../components/Footer'
-import Dialogue from 'components/dialogue'
+import Dialogue from '../components/dialogue'
 
 export default function Home() {
   return (

@@ -62,7 +62,7 @@ export default function Chatbot() {
     { from: 'bot',name: "Loc, Développeur web fullstack", text: "Bonjour ! Pose-moi une question en cliquant sur un bouton." }
   ])
   // pour désactiver les questions déjà posées
-  const [asked, setAsked] = useState([])
+  const [asked, setAsked] = useState<number[]>([])
   // const [isTyping, setIsTyping] = useState(false)
   const isBotTyping = messages.some(
     m => m.from === 'bot' && (m.typing || m.animated)
@@ -164,7 +164,7 @@ export default function Chatbot() {
                 // />
 
                 <TypingText
-                  text={m.text}
+                  text={m.text ?? ""}
                   speed={30}
                   onProgress={scrollToBottom}
                   onDone={() => {
@@ -181,7 +181,7 @@ export default function Chatbot() {
                 />
               ) : (
                 <div>
-                  {m.text.split('\n').map((line, i) => (
+                  {(m.text ?? "").split('\n').map((line, i) => (
                     <p key={i}>{line}</p>
                   ))}
                 </div>
