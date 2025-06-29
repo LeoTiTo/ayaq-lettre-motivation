@@ -59,7 +59,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="md:scroll-mt-5 pt-24 px-4 relative pb-12 ">
+    <section id="projects" className="md:scroll-mt-5 pt-24 px-4 relative">
       <div className="container mx-auto max-w-7xl">
         {/* <h2 className="text-2xl lg:text-4xl font-bold mb-4 uppercase text-center">
           Mes <span className="text-primary"> Projets</span>

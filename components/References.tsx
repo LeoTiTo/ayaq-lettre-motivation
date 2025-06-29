@@ -25,7 +25,7 @@ const references = [
 
 export default function References() {
   return (
-    <section id= "ref" className="scroll-mt-10 pt-20 min-h-screen">
+    <section id= "ref" className="scroll-mt-10 py-20 min-h-screen">
       <Title title="Ma collaboration, vu par mes collègues" symbol=""/>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         {references.map((ref) => (
