@@ -2,8 +2,8 @@
 import { useState, useEffect } from "react"
 
 const leftMenu = [
-  { label: "Feedbacks", href: "#ref" },
-  { label: "Projets", href: "#projects" }
+  { label: "Projets", href: "#projects" },
+  { label: "Feedbacks", href: "#ref" }
 ];
 
 const rightMenu = [

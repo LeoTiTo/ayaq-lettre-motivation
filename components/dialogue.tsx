@@ -59,7 +59,7 @@ export default function Chatbot() {
     typing?: boolean;
     animated?: boolean;
   }>>([
-    { from: 'bot',name: "Loc, Développeur web fullstack", text: "Bonjour ! Pose-moi une question en cliquant sur un bouton." }
+    { from: 'bot',name: "Loc, Développeur web fullstack", text: "Bonjour ! Posez-moi une question en cliquant sur un bouton." }
   ])
   // pour désactiver les questions déjà posées
   const [asked, setAsked] = useState<number[]>([])
@@ -125,8 +125,8 @@ export default function Chatbot() {
 
   return (
     <section id="dialogue" className="scroll-mt-10 pt-20">
-      <div className="flex flex-col h-[80vh] border-2 border-black bg-white rounded-sm shadow-lg overflow-hidden">
-        <h2 className="py-8 text-xl lg:text-2xl font-bold text-center uppercase">
+      <div className="flex flex-col h-[80vh] bg-white rounded-sm shadow-[0px_0px_100px_0px_black] overflow-hidden">
+        <h2 className="py-8 text-2xl lg:text-4xl font-bold text-center uppercase">
           Dialoguez avec moi ?
         </h2>
         {/* fenêtre de chat */}

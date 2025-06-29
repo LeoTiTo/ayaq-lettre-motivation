@@ -9,7 +9,7 @@
             color-mix(in oklab, var(--color-neutral-950) 100%, transparent)
         ),
         url('/images/noise.png');
-    --color-primary: #2bdcd2;
+    --color-primary: #d946ef;
     --color-primary-content: #171717;
     --color-secondary: #016968;
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
@@ -206,5 +206,14 @@ html {
   display: inline-block;
   animation: beat 1.6s infinite cubic-bezier(.4,0,.2,1);
   will-change: transform;
+}
+  
+@layer utilities {
+    .card-hover {
+      @apply transition-transform duration-300 hover:scale-[1.06] hover:shadow-2xl;
+    }
+    .card-ref-hover {
+        @apply transition-transform duration-300 hover:scale-[1.05];
+    }
 }
   

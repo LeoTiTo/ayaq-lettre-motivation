@@ -17,10 +17,10 @@ export default function Home() {
       <main className="max-w-6xl mx-auto px-4">
         <CardsGrid />
       </main>
+      <Projects />
       <div className="w-full mx-auto max-w-7xl px-4">
         <References />
       </div>
-      <Projects />
       <Footer />
     </>
   )

@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { ArrowUpCircle } from "lucide-react";
+
 export default function Footer() {
     return (
         <footer className="py-8 text-center bg-black text-white">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6">
             {/* Partie personnelle */}
             <div className="text-sm opacity-80 md:mt-0">
               <p>Huu Loc TRAN | Développeur web fullstack</p>

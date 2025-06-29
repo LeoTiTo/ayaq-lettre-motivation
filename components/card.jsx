@@ -69,6 +69,7 @@ const Card = ({ title, description, image, typeOfLangage }) => {
           }
           transition-all ease-in-out duration-200
           hover:scale-105
+          hover:shadow-xl
       `}
           onClick={handleChange}
           style={{ transformStyle: "preserve-3d" }}

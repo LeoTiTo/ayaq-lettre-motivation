@@ -5,10 +5,10 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="scroll-mt-10 pt-20"
+      className="scroll-mt-10 pt-24"
     >
     <Title title="Mes compétences" symbol="" />
-    <p className="mt-4 text-sm text-neutral-700 italic text-center">
+    <p className="text-m text-neutral-700 italic text-center mb-6">
       N&apos;hésitez pas à cliquer sur les cartes pour explorer mes compétences, les technologies que j&apos;utilise, et en savoir plus sur mon parcours technique.
     </p>
     <div
