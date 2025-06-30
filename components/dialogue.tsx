@@ -59,7 +59,7 @@ export default function Chatbot() {
     typing?: boolean;
     animated?: boolean;
   }>>([
-    { from: 'bot',name: "Loc, Développeur web fullstack", text: "Bonjour ! Posez-moi une question en cliquant sur un bouton." }
+    { from: 'bot',name: "Loc, Développeur web fullstack", text: "Bonjour ! Posez-moi une question en cliquant sur un bouton.\n\nAstuce : sur PC, vous pouvez aussi faire défiler les questions avec la molette de la souris." }
   ])
   // pour désactiver les questions déjà posées
   const [asked, setAsked] = useState<number[]>([])
@@ -68,7 +68,77 @@ export default function Chatbot() {
     m => m.from === 'bot' && (m.typing || m.animated)
   )
   const chatContainerRef = useRef<HTMLDivElement>(null)
+  const scrollRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const container = scrollRef.current
+    if (!container) return
   
+    let isDown = false
+    let startX = 0
+    let scrollLeft = 0
+  
+    const startDrag = (x: number) => {
+      isDown = true
+      startX = x - container.offsetLeft
+      scrollLeft = container.scrollLeft
+      container.classList.add('cursor-grabbing')
+    }
+  
+    const endDrag = () => {
+      isDown = false
+      container.classList.remove('cursor-grabbing')
+    }
+  
+    const moveDrag = (x: number) => {
+      if (!isDown) return
+      const walk = (x - startX) * 1.5
+      container.scrollLeft = scrollLeft - walk
+    }
+  
+    const handleMouseDown = (e: MouseEvent) => startDrag(e.pageX)
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isDown) return
+      e.preventDefault()
+      moveDrag(e.pageX)
+    }
+  
+    const handleTouchStart = (e: TouchEvent) => startDrag(e.touches[0].pageX)
+    const handleTouchMove = (e: TouchEvent) => moveDrag(e.touches[0].pageX)
+  
+    const handleWheel = (e: WheelEvent) => {
+      if (e.deltaY === 0) return
+      e.preventDefault()
+      container.scrollLeft += e.deltaY
+    }
+  
+    container.addEventListener('mousedown', handleMouseDown)
+    container.addEventListener('mousemove', handleMouseMove)
+    container.addEventListener('mouseup', endDrag)
+    container.addEventListener('mouseleave', endDrag)
+  
+    container.addEventListener('touchstart', handleTouchStart)
+    container.addEventListener('touchmove', handleTouchMove)
+    container.addEventListener('touchend', endDrag)
+  
+    container.addEventListener('wheel', handleWheel, { passive: false }) // <- important
+  
+    return () => {
+      container.removeEventListener('mousedown', handleMouseDown)
+      container.removeEventListener('mousemove', handleMouseMove)
+      container.removeEventListener('mouseup', endDrag)
+      container.removeEventListener('mouseleave', endDrag)
+  
+      container.removeEventListener('touchstart', handleTouchStart)
+      container.removeEventListener('touchmove', handleTouchMove)
+      container.removeEventListener('touchend', endDrag)
+  
+      container.removeEventListener('wheel', handleWheel)
+    }
+  }, [])
+  
+  
+
   // Scroll automatique à chaque nouveau message
   useEffect(() => {
     const scrollToBottom = () => {
@@ -132,7 +202,7 @@ export default function Chatbot() {
         {/* fenêtre de chat */}
         <div
           ref={chatContainerRef}
-          className="flex-1 p-4 space-y-4 overflow-y-auto bg-gray-50 scroll-smooth"
+          className="flex-1 p-4 space-y-4 overflow-y-auto bg-gray-50 scroll-smooth scrollbar-hide"
           style={{ scrollBehavior: 'smooth' }}
         >
           
@@ -192,28 +262,25 @@ export default function Chatbot() {
         </div>
 
         {/* zone des boutons de questions */}
-        <div className="p-4 bg-white border-t grid grid-cols-1 sm:grid-cols-2 gap-2">
-          {questions.map((q, idx) => (
-            <button
-              key={idx}
-              onClick={() => handleAsk(idx)}
-              disabled={asked.includes(idx) || isBotTyping}
-              className={`
-                  px-3 py-2 text-left border  
-                  transition-all ease-in-out duration-200
+        <div ref={scrollRef} className="p-4 bg-white border-t backdrop-blur-sm overflow-x-auto scrollbar-hide no-select">
+          <div className="flex space-x-3 min-w-max">
+            {questions.map((q, idx) => (
+              <button
+                key={idx}
+                onClick={() => handleAsk(idx)}
+                disabled={asked.includes(idx) || isBotTyping}
+                className={`
+                  snap-start whitespace-nowrap px-3 py-2 border rounded
+                  transition-all duration-200
                   ${asked.includes(idx)
-                  ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
-                  : `
-                      bg-white text-black 
-                      hover:shadow-lg hover:shadow-black-500/50 
-                      hover:ring-2 hover:ring-black-500/50
-                  `
-                  }
-              `}
-            >
-              {q}
-            </button>
-          ))}
+                    ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
+                    : 'bg-white text-black hover:shadow-lg hover:ring-2 hover:ring-black active:shadow-md active:ring-2 active:ring-black'}
+                `}
+              >
+                {q}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </section>

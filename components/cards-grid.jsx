@@ -13,7 +13,7 @@ const Skills = () => {
     </p>
     <div
       className="
-      flex gap-4 p-4 overflow-x-auto overflow-y-hidden   /* Mobile : scroll horizontal */
+      flex gap-4 p-4 overflow-x-auto overflow-y-hidden scrollbar-hide  /* Mobile : scroll horizontal */
       sm:grid sm:grid-cols-2                 /* Dès sm : grille 2 cols */
       md:grid-cols-3 lg:grid-cols-5     /* +1 col sur md/lg */
       sm:gap-6 sm:overflow-x-hidden          /* Dès sm : plus d'espace, plus de scroll */

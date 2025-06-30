@@ -29,11 +29,17 @@ export default function References() {
       <Title title="Ma collaboration, vu par mes collègues" symbol=""/>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         {references.map((ref) => (
-          <div key={ref.name} className="p-6 border shadow-lg card-ref-hover cursor-pointer hover:border-black-500 hover:shadow-[10px_10px_30px_3px_black]">
+          <div key={ref.name} className="p-6 border shadow-lg card-ref-hover cursor-pointer hover:border-black-500 hover:shadow-[10px_10px_30px_3px_black] active:border-black-500 active:shadow-[10px_10px_30px_3px_black]">
             <p className="italic mb-2">&quot;{ref.text}&quot;</p>
             <p className="font-semibold text-right">– {ref.name}</p>
           </div>
         ))}
+      </div>
+
+      <div className="w-full text-center mt-20 hidden sm:block">
+        <div className="inline-block px-4 py-3 bg-black text-white text-xl rounded shadow animate-bounce-slow">
+          📱 Testez ce site sur votre téléphone !
+        </div>
       </div>
     </section>
   );
