@@ -73,7 +73,10 @@ export default function Chatbot() {
   useEffect(() => {
     const container = scrollRef.current
     if (!container) return
-  
+    
+    const isDesktop = () => window.innerWidth >= 768
+    if (!isDesktop()) return
+
     let isDown = false
     let startX = 0
     let scrollLeft = 0
