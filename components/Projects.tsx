@@ -16,7 +16,7 @@ const projects = [
     desc: "Portfolio web moderne et responsive mettant en valeur les services et créations d'une maquilleuse",
     image: "/projects/jolieportfolio.png",
     tags: ["https://svgl.app/library/html5.svg","https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg","https://svgl.app/library/javascript.svg"],
-    demoUrl: "https://leotito.github.io/LyMakeArt_Portfolio/",
+    demoUrl: "https://leotito.github.io/LyMakeArt_Portfolio",
     githubUrl: "https://github.com/LeoTiTo/LyMakeArt_Portfolio",
   },
   {
@@ -34,8 +34,8 @@ const projects = [
     desc: "Site de prévisions météorologiques en temps réel",
     image: "/projects/meteoto.png",
     tags: ["https://svgl.app/library/html5.svg","https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg","https://svgl.app/library/javascript.svg"],
-    demoUrl: "https://github.com/LeoTiTo/Meteo",
-    githubUrl: "https://github.com/LeoTiTo/Meteo",
+    demoUrl: "https://meteoto.netlify.app",
+    githubUrl: "https://meteoto.netlify.app",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const projects = [
     desc: "Application de quiz rapide et interactive pour tester ses connaissances en temps réel",
     image: "/projects/quickquiz.png",
     tags: ["https://svgl.app/library/html5.svg","https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg","https://svgl.app/library/javascript.svg"],
-    demoUrl: "https://leotito.github.io/QuickQuiz/",
+    demoUrl: "https://leotito.github.io/QuickQuiz",
     githubUrl: "https://github.com/LeoTiTo/QuickQuiz",
   },
   {
